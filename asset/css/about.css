@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ===================Navbar=========== */
+li {
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.container {
+    position: sticky;
+    top: 0;
+    /* margin: 0 4rzem; */
+    background: #0e0d0dcf;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+}
+
+.header-container .navbar ul {
+    display: flex;
+    list-style: none;
+    /* padding: 0 2rem; */
+}
+li a {
+    display: inline-block;
+    position: relative;
+}
+
+li a::before {
+    content: '';    
+    width: 0;
+    height: 2px;
+    background-color: tomato;
+    position: absolute;
+    top: 30px;
+    transition: 0.5s linear ;
+}
+
+/* ===================Navbar-hover=========== */
+li a:hover::before{
+    width: 100%;
+    
+}
+li a:hover{
+color: #e61c20;
+}
+/* =================== END-Navbar=========== */
+ 
+/* ===================middal-Bottom=========== */
+
+
+.midd-bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.bottom-right {
+    background: black;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 2px;
+    padding-left: 40px;
+
+}
+
+.info {
+    padding: 20px 0;
+    text-transform: capitalize;
+
+}
+
+.info h2 {
+    color: #707070c1;
+    font-size: xx-large;
+    padding: 10px 0;
+}
+
+.info p {
+    color: #828080;
+}
+
+.bottom-right p {
+    color: tomato;
+}
+
+.img-container img {
+    border: 1px solid tomato;
+    border-width: thick;
+}
+
+.other-info {
+    text-transform: capitalize;
+
+}
+
+.other-info p {
+    color: darkgray;
+}
+
+.tab {
+    padding: 15px 0px;
+}
+
+.tab td {
+    color: darkgray
+}
+
+.tab td a {
+    text-decoration: none;
+    color: darkgray;
+    text-transform: initial;
+
+}
+
+.tab th {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.tab td:nth-child(2) {
+    padding: 20px;
+}
+

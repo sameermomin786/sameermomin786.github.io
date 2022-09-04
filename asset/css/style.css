@@ -1,0 +1,392 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dfdbdb;
+    /* background: black; */
+    margin: 0 3rem;
+}
+
+
+
+/* ===================Navbar=========== */
+li {
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.container {
+    position: sticky;
+    top: 0;
+    /* margin: 0 4rzem; */
+    background: #0e0d0dcf;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+}
+
+.header-container .navbar ul {
+    display: flex;
+    list-style: none;
+    /* padding: 0 2rem; */
+}
+li a {
+    display: inline-block;
+    position: relative;
+}
+
+li a::before {
+    content: '';    
+    width: 0;
+    height: 2px;
+    background-color: tomato;
+    position: absolute;
+    top: 30px;
+    transition: 0.5s linear ;
+}
+
+/* ===================Navbar-hover=========== */
+li a:hover::before{
+    width: 100%;
+    
+}
+li a:hover{
+color: #e61c20;
+}
+/* =================== END-Navbar=========== */
+ 
+/* ===================middal=========== */
+
+.midal-container {
+    /* background-image: url(../images/bg2.jpg); */
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #000000de 0%, #0b0b0b 88%, #ffffff 99%, #ffffff 100%);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.midal-container .midd-left {
+    padding-right: 158px;
+
+}
+/* ===================middal-h1=========== */
+
+.title{
+    position: relative;
+    color: #fff;
+    padding: 10px;
+}
+.rotate-words{
+    display: inline;
+    margin-left: 10px;
+
+}
+.rotate-words span{
+    width: max-content;
+    position: absolute;
+    /* background-color: tomato; */
+    padding-inline: 10px;
+    opacity: 0;
+    transform-origin:10% 75% ;
+    animation: rotatewords 12s
+    var(---d) linear infinite;
+
+}
+@keyframes rotatewords {
+    5%{
+        opacity: 1;
+    }
+    10%,
+    20%
+    {
+opacity: 1;
+transform: rotate(3deg);
+    }
+    15%{
+        transform: rotate(-1deg);
+    }
+    25%{
+        opacity: 0;
+        transform: translatey(90px)
+        rotate(10deg)
+        ;
+        
+    }
+}
+
+
+
+.midd-left h1 {
+    /* text-transform: capitalize; */
+    font-weight: bold;
+    font-size: 40px;
+
+}
+
+.heading span {
+    font-size: 45px;
+}
+
+.midd-left h1 span {
+    color: #ca0c0cd6;
+}
+
+.midd-left p {
+    
+    padding-bottom: 30px;
+    color: #342e2eeb;
+}
+
+.midd-left .btn button{
+    border: 2px solid white;
+    width: 120px;
+    border-radius: 20px;
+    padding: 6px 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    text-transform: capitalize;
+    background: #9a1212c5;
+
+}
+
+
+.midd-left .btn a {
+    text-decoration: none;
+    color: #fff;
+}
+/* .midd-left .btn a:hover{
+    
+    /* box-shadow: -10px -8px 0px rgb(39, 41, 40); */
+
+
+/* ===================middal-Bottom=========== */
+
+
+.midd-bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.bottom-right {
+    background: black;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 2px;
+    padding-left:  100px;
+
+}
+
+.info {
+    padding: 20px 0;
+    text-transform: capitalize;
+
+}
+
+.info h2 {
+    color: #707070c1;
+    font-size: xx-large;
+    padding: 10px 0;
+}
+
+.info p {
+    color: #828080;
+}
+
+.bottom-right p {
+    color: tomato;
+}
+
+.img-container img {
+    border: 1px solid tomato;
+    border-width: thick;
+}
+
+.other-info {
+    text-transform: capitalize;
+
+}
+
+.other-info p {
+    color: darkgray;
+}
+
+.tab {
+    padding: 15px 0px;
+}
+
+.tab td {
+    color: darkgray
+}
+
+.tab td a {
+    text-decoration: none;
+    color: darkgray;
+    text-transform: initial;
+
+}
+
+.tab th {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.tab td:nth-child(2) {
+    padding: 20px;
+}
+
+/* =================skill-edu============= */
+
+.skill-edu {
+    display: flex;
+    /* height: 70vh; */
+    background: #2a2727;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+
+}
+
+.left-container {
+    text-transform: capitalize;
+    /* background:#828080 */
+
+}
+
+.education {
+    padding: 60px 0;
+
+}
+
+.education span {
+    color: tomato;
+}
+
+.main-edu {
+    display: flex;
+}
+
+.left-side {
+    width: 5px;
+    height: 220px;
+    background: #0d0d0da6;
+    margin-right: 8px;
+    position: relative;
+}
+
+.left-side span:nth-child(1) {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    left: -3px;
+}
+
+.left-side span:nth-child(2) {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    left: -3px;
+    top: 133px;
+}
+
+.right-side p {
+
+    padding-bottom: 30px;
+}
+/* skills-container start */
+ .skills-container {
+    padding-left: 80px;
+    text-transform: capitalize;
+    width: 500px;
+    
+} 
+.right-container .bars{
+    margin-bottom: 40px;
+    position: relative;
+    
+}
+.right-container .line{
+    height: 4px;
+    width:100%;
+    background-color: lightgray;
+    position: relative;
+}
+.right-container .bars .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+}
+.right-container .bars span{
+     font-weight: 500;
+     font-size: 18px;
+}
+.right-container .line::before{
+    content: '';
+    position: absolute;
+    height: inherit;
+    left: 0;
+    top: 0px;
+    background: crimson;
+}
+.right-container .html::before{
+width: 0;
+transition: 0.25s linear;
+
+}
+
+.right-container .html::after{
+    content: '';
+    width: 10px;
+    height: 7px;
+
+}
+.right-container:hover .html::before{
+width: 340px;
+}
+.right-container .CSS::before{
+width: 80px;
+}
+.right-container .JvaScript::before{
+width: 60%;
+}
+.right-container .boostraps::before{
+width: 65%;
+}
