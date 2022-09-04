@@ -365,28 +365,46 @@ transform: rotate(3deg);
     left: 0;
     top: 0px;
     background: crimson;
+    transition: 3s linear 1s infinite running slidein;
 }
-.right-container .html::before{
+
+/* .right-container .html::before{
 width: 0;
-transition: 0.25s linear;
+/* transition: 0.1s linear; 
+animation: ease-in;
 
 }
+.right-container .CSS::before{
+width: 0;
+transition: 0.2s linear;
 
-.right-container .html::after{
+}
+.right-container .JvaScript::before{
+width: 0;
+transition: 0.2s linear;
+
+}
+.right-container .boostraps::before{
+width: 0;
+transition: 0.2s linear;
+
+} 
+/* .right-container .html::after{
     content: '';
     width: 10px;
     height: 7px;
 
-}
-.right-container:hover .html::before{
-width: 340px;
+} */
+.right-container .html::before{
+width: 70%;
 }
 .right-container .CSS::before{
-width: 80px;
+width: 80%;
 }
 .right-container .JvaScript::before{
 width: 60%;
 }
 .right-container .boostraps::before{
-width: 65%;
+    width:65%;
 }
+/* .right-container:hover .boostraps::before{ */
