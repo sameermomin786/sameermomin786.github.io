@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* body{
+    font-family: 'Open Sans', sans-serif;
+} */
+/* --------------------------------header-css-------------------------------- */
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 70px;
+}
+
+.header .image img {
+    width: 100px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 12px;
+}
+
+nav {
+    padding-right: 200px
+}
+
+.search-bar {
+    position: relative;
+    background: #d6d6d6;
+
+}
+
+.search-bar::before {
+    content: '2';
+    position: absolute;
+    right: -13px;
+    top: -12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fe1919;
+    color: #ffff;
+    box-shadow: 1px 1px 6px 2px #f13f3f;
+    z-index: 1;
+}
+
+
+
+.search-bar input {
+    padding: 3px 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+
+
+}
+
+.search-bar .icon i {
+    position: absolute;
+    top: 11px;
+    left: 3px;
+}
+
+.search-bar .image-cart img {
+    position: absolute;
+    width: 30px;
+    top: 2px;
+    padding-left: 6px;
+    right: 0;
+    border-left: 1px solid #d2c0c0;
+}
+
+
+
+/* ---------------------------headerbottom-css------------------------------- */
+
+.delivery {
+    background-color: #ffceb3;
+    border-radius: 30px;
+    width: 260px;
+    padding: 6px 0;
+}
+
+.delivery span {
+    color: #f56a1f;
+    text-transform: capitalize;
+}
+
+
+
+
+.heading h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+}
+
+.heading .city {
+    color: #d48c06;
+}
+
+.order-here {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.order-here span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.order-now button {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: orange;
+    color: #1b1313;
+
+}
+
+.order-process button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 14px 4px #1b1313;
+}
+
+.order-process button span {
+    clip-path: polygon(100% 46%, 0 0, 0 100%);
+    width: 20px;
+    height: 20px;
+    background-color: #d48c06;
+    display: inline-block;
+}
+
+.button {
+    position: relative;
+    top: 16px;
+    position: relative;
+    top: 16px;
+    display: flex;
+    gap: 20px;
+}
+
+.button button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 1px 4px 3px 2px #cebfbf78;
+
+}
+
+.price .text-color {
+    color: #ff0101;
+    font-weight: 500;
+   
+}
+
+.button .right-arrow {
+    background: black;
+
+}
+
+.button .right-arrow i {
+    color: #fff
+}
+
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 85px;
+
+}
+
+.card .item .image img {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    filter: drop-shadow(2px 2px 7px #00000092);
+
+}
+
+.burger {
+
+    margin-top: 55px;
+    width: 198px;
+    border-radius: 20px;
+}
+
+/* .food-section {
+    position: relative;
+   
+} */
+
+.food-section::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(0deg, white, #d6d6d6 80%);
+    width: 500px;
+    height: 100%;
+    right: 0;
+    border-radius: 25px;
+
+}
+
+/* ---------------------------row--------------------- */
+.sam {
+    margin-top: 200px;
+}
+
+/* ---------------------------------all-furit-cart---------------- */
+
+.fruit {
+    border: 1px solid #c1b6b6;
+    height: 200px;
+    width: 320px;
+    border-radius: 30px;
+    position: relative;
+    background: #e6e3e3;
+
+
+
+}
+
+/* ------------------orange-css------------------ */
+.fruit .img img {
+    position: absolute;
+    transform: translate(50%, -50%);
+    left: -50%;
+    filter: drop-shadow(6px 10px 11px #e4773c);
+
+
+}
+
+.fruit .info .icon i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff0101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px 19px;
+}
+
+.price {
+    width: 137px;
+    margin-top: 12px;
+}
+
+.pluse button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 8px;
+    background: #1a1a1afc;
+
+}
+
+.pluse button span {
+    color: #ececec;
+}
+
+/* -----------------------------strawberry-css------------------------- */
+
+.fruit .strawberry img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 1;
+    left: 50px;
+    filter: drop-shadow(2px 7px 7px #a61e1ed9);
+
+}
+
+.price-2 {
+    width: 162px;
+}
+
+
+/* ---------------------------- Pomegranate-css---------------------- */
+.fruit .pomfruit img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 1;
+    left: 50px;
+    filter: drop-shadow(4px 10px 7px #4f2f2fd3);
+}
+
+.price-3 {
+    width: 204px;
+}
+
+/* ----------------side-menu-css-------------- */
+.side-menu {
+    position: absolute;
+    background: #fff;
+    width: 200px;
+    height: 100vh;
+    right: 178px;
+    top: 0;
+    display: none;
+    /* transform: translateX(100%);
+    transition:  0.5s ease; */
+
+
+
+}
+
+.side-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-menu ul li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 25px 0;
+    color: #898989;
+
+}
+
+.side-menu ul li:hover {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+
+}
+
+.right-menu img {
+    width: 20px;
+    color: #898989;
+}
+
+
+
+/* ---------------------responsive-section--------------------- */
+
+
+/* @media only screen and (max-width: 768px) {
+    .food-section {
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .food-bg::before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(0deg, white, #d6d6d6 80%);
+        width: 387px;
+        height: 100%;
+        right: 0;
+        border-radius: 40px;
+    }
+    .sushi{
+        margin-top: 90px;
+    }
+    .burger{
+        
+        width: 300px;
+    }
+    .price {
+        display: flex;
+       
+        justify-content: center;
+    }
+  
+
+    } */
+/* @media only screen and (max-width: 1199px) {
+        body{
+            background-color: red;
+        }
+        .food-section::before {
+            content: '';
+            position: absolute;
+            background: linear-gradient(0deg, white, #d6d6d6 80%);
+            width: 355px;
+            height: 100%;
+            right: -17px;
+            border-radius: 25px;
+    }
+    .food-section{
+        width: 120%;
+    }
+} */
+
+@media only screen and (max-width:768px) {
+
+    /* .header-bottom{
+        background-color: red;
+    } */
+    .right-header {
+        display: none;
+    }
+
+    .food-section {
+        margin-top: 50px;
+    }
+
+
+}
+
+@media only screen and (max-width:576px) {
+    /* .food-section{
+        background-color: red;
+    } 
+    */
+    .card{
+        width: 80%;
+    }
+    .sushi{
+        margin-top: 90px;
+    }
+.burger{
+    margin-top: 55px;
+    width: 80%;
+    border-radius: 20px;
+
+}
+.food-section::before{
+    width:400px;
+    left:113px;
+    
+}
+
+}
+@media only screen and (min-width:577px){
+    .food-section::before{
+        width: 432px;
+    }
+}
+@media only screen and (max-width:575px) {
+    .food-section::before{
+        width: 304px;
+        left: 113px;
+    }
+    .burger{
+        width: 50%  ;
+    }
+    
+}
+@media only screen and (min-width:768px){
+    .heading h2{
+        font-size: 60px;
+    }
+    .order-here{
+        gap: 25px;
+    }
+    .food-section::before{
+        left: 95px;
+        width: 100%;
+    }
+    .sushi{
+        margin-left: 40px;
+    }
+   
+   
+}
+@media only screen and (max-width:427px){
+    .heading h2{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:576px){
+    .col-md-4{
+            margin-left: 167px;
+            margin-bottom: 75px;
+    }
+    
+}
+
