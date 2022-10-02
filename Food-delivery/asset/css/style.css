@@ -219,7 +219,7 @@ nav {
     content: '';
     position: absolute;
     background: linear-gradient(0deg, white, #d6d6d6 80%);
-    width: 500px;
+    width: 70%;
     height: 100%;
     right: 0;
     border-radius: 25px;
@@ -235,11 +235,11 @@ nav {
 
 .fruit {
     border: 1px solid #c1b6b6;
-    height: 200px;
-    width: 320px;
     border-radius: 30px;
     position: relative;
     background: #e6e3e3;
+    display: flex;
+    justify-content: end;
 
 
 
@@ -274,8 +274,8 @@ nav {
     padding: 20px 19px;
 }
 
-.price {
-    width: 137px;
+.price-1     {
+    width: 100%;
     margin-top: 12px;
 }
 
@@ -287,9 +287,14 @@ nav {
     background: #1a1a1afc;
 
 }
-
+.cart-content {
+    padding: 0 30px;
+}
 .pluse button span {
     color: #ececec;
+}
+.info .name h6{
+    font-size: 1.5rem;
 }
 
 /* -----------------------------strawberry-css------------------------- */
@@ -303,9 +308,7 @@ nav {
 
 }
 
-.price-2 {
-    width: 162px;
-}
+
 
 
 /* ---------------------------- Pomegranate-css---------------------- */
@@ -317,9 +320,7 @@ nav {
     filter: drop-shadow(4px 10px 7px #4f2f2fd3);
 }
 
-.price-3 {
-    width: 204px;
-}
+
 
 /* ----------------side-menu-css-------------- */
 .side-menu {
@@ -468,15 +469,12 @@ nav {
     }
 }
 @media only screen and (max-width:575px) {
-    .food-section::before{
-        width: 304px;
-        left: 113px;
-    }
+   
     .burger{
-        width: 50%  ;
+        margin: 55px auto;
     }
     
-}
+} 
 @media only screen and (min-width:768px){
     .heading h2{
         font-size: 60px;
@@ -499,11 +497,11 @@ nav {
         font-size: 1.5rem;
     }
 }
-@media only screen and (max-width:576px){
+/* @media only screen and (max-width:576px){
     .col-md-4{
             margin-left: 167px;
             margin-bottom: 75px;
     }
     
-}
+} */
 
