@@ -13,6 +13,47 @@
 </head>
 
 <body>
+    <div class="modal-container ">
+
+        <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" class="mt-5">
+           Add New Bank
+          </button>
+          
+        
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Add Bank</h5>
+                  
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="bank-Name" class="form-label">Bank Name </label>
+                          <input type="text" class="form-control" id="bank-Name" aria-describedby="emailHelp " placeholder="Enter your bank Name">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="ccount-number" class="form-label">accountNumber</label>
+                          <input type="text" class="form-control" id="account-number" placeholder="Enter your AccountNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label for="ifcs-code" class="form-label">Ifsc code</label>
+                            <input type="text" class="form-control" id="ifcs-code" placeholder="Enter your ifscCode">
+                          </div>
+                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                      </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" id="save-bank" class="btn btn-primary">Save bank</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
 
     <table class="table"  id="tabledetail">
         <thead>
