@@ -1,9 +1,8 @@
 
 $.ajax({
 	type: "GET",
-	url: `
-    http://103.88.221.150:9439/api/staff/getAll
-    `,
+	url: ` http://103.88.221.150:9439/api/staff
+     `,
 	responseType: "json",
 	success: function (response) {
         console.log("check-staf=>api",response);
@@ -45,10 +44,15 @@ $("#save-details").on('click', function () {
 
     let StaffAddress = $("#Address").val()
     console.log("StaffAddress",StaffAddress);
-
     
+    window.onload = function(){
+        alert("check")
+    }    
+ function filData() {
+    
+ }   
 $.ajax({
-    url: `http://103.88.221.150:9439/api/staff`,
+    url: `http://103.88.221.150:9439/api/staff/`,
     dataType: 'json',
     type: 'POST',
     contentType: 'application/json',
@@ -62,12 +66,13 @@ $.ajax({
             "staffName": staffName
         
     }),
-    success: function (response) {
-      
+    complete: function (response) {
+        
     },
     
+    
+});
+});
 
-});
-});
 
 

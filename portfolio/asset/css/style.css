@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -172,28 +175,39 @@ transform: rotate(3deg);
 
 
 .home-left h1 {
-    /* text-transform: capitalize; */
+    text-transform: capitalize;
     font-weight: bold;
     font-size: 40px;
 
 }
-.heading{
+.heading-name{
     padding: 20px 0;
 
 }
+.heading-name{
+    padding: 20px 0;
 
-.heading span {
+}
+.heading-name h1 a{
+   text-decoration: none;
+  color:  #fff
+
+}
+
+  
+
+.heading-name span {
     font-size: 45px;
 }
 
-.home-left h1 span {
+/* .home-left h1 span {
     color: #ca0c0cd6;
-}
+} */
 
 .home-left p {
-
+font-size: 1.5rem;
     padding-bottom: 30px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .btn {
@@ -270,22 +284,20 @@ transform: rotate(3deg);
 
 }
 
-.img-container {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #ff004f;
-    border-width: thick;
 
-}
 
 .img-container img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     display: block;
-    transition: transform 0.5s;
+    transition: transform 0.5s;    
+    border-radius: 50%;
+    border: 1px solid #ff004f;
+    border-width: inherit;
+    filter: drop-shadow(6px 1px 13px #ff004f);
 }
+
 
 .img-container:hover img {
     transform: scale(1.1);
@@ -398,7 +410,9 @@ transform: rotate(3deg);
 }
 
 .right-side h3 {
-    color: #dc143c
+    color: #dc143c;
+    text-transform: capitalize;
+    
 }
 
 /* skills-container start */
@@ -552,6 +566,72 @@ form textarea {
     font-size: 18px;
     border-radius: 6px;
 }
+/* --------------media-start------------------------- */
+@media only screen and (max-width:768px) {
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
 
+    }
+    .home-container{
+        padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .other-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-right {
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 2px;
+    }
+    
 
-@keyframes line {}  
+    .skill-edu {
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        
+    }
+    .skill-edu .left-container{
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    }
+    .education {
+        padding: 0;
+        text-align: center;
+    }
+    .right-container .bars .info {
+        display: flex;
+        flex-direction: inherit;
+    }
+    .skills-container .education{
+        padding: 25px 0;
+    }
+
+}
+   

@@ -64,6 +64,10 @@
                 <th>accountNumber</th>
                 <th>ifscCode</th>
                 <th>ipAddress</th>
+                <th >activeStatus</th>
+                <th>DeleteStatus</th>
+                <th>Edit</th>
+                <th >DeleteBank</th>
                
             </tr>
         </thead>
@@ -73,11 +77,50 @@
 
     </table>
 
+
+    <div class="edit-modal-container ">
+      
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Bank</h5>
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="mb-3">
+                        <label for="edit-bank-Name" class="form-label">New Bank Name </label>
+                        <input type="text" class="form-control" id="edit-bank-Name" aria-describedby="emailHelp " placeholder="Enter your bank Name">
+                        
+                      </div>
+                      <div class="mb-3">
+                        <label for="edit-account-number" class="form-label">New account Number</label>
+                        <input type="text" class="form-control" id="edit-account-number" placeholder="Enter your AccountNumber">
+                      </div>
+                      <div class="mb-3">
+                          <label for="edit-ifcs-code" class="form-label">New Ifsc code</label>
+                          <input type="text" class="form-control" id="edit-ifcs-code" placeholder="Enter your ifscCode">
+                        </div>
+                      <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                    </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="update-bank" class="btn btn-primary">update bank</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
     <script src="./asset/vendor/jquery-min.js"></script>
     <script src="./asset/vendor/DataTables/datatables.min.js"></script>
     <script src="https://kit.fontawesome.com/7f05516342.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./asset/JavaScritp/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src=".//asset/javascript/index.js"></script>
 </body>
 
 </html>

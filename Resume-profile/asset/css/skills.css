@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-color: #ead3b5;
+}
+
+/* ---------------------Skills-section-css-start---------------------- */
+.Skills-section{
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+}
+.Skills-left-section{
+
+    width: 25%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+}
+.side-header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+ .navbar ul li{
+    list-style: none;
+    font-weight: bold;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+   text-transform: capitalize;
+   position: relative;
+   font-size: 1.2rem;
+ 
+ }
+ul li a::before{
+    content: '';
+    width:0;
+    height: 2px;
+    background-color: #f5810c;
+    position: absolute;
+    bottom: 0;
+    transition: width 0.5s linear;
+}
+ul li a:hover::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #f5810c;
+    position: absolute;
+    bottom: 0;
+}
+ .navbar ul{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+
+}
+
+.side-name h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+.side-name h1 span:nth-child(1){
+    color: #f5810c;
+}
+
+.side-header .icons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+ .socail-media .icons a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.socail-media .icons a:hover {
+    color: #f5810c;
+    transform: translateY(-5px);
+}  
+
+.navbar ul .active{
+    color: #f5810c;
+}
+
+
+
+.skill-right-section{
+    width: 75%;
+    margin-top: 40px;
+}
+
+/* .skill-progress-bar .progress-bar{
+    padding: 1.5rem 0;
+} */
+.heading{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.heading h3 span{
+    color: #f5810c;
+}
+.skill-progress-bar .progress-bar h3{
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 0;
+    font-size: 1.7rem;
+    color: #111;
+    
+}
+.skill-progress-bar .progress-bar  .bar{
+    width: 100%;
+    background-color: #ccc;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50px;
+   
+}
+.skill-progress-bar .progress-bar  .bar span{
+    display: block;
+    height: 100%;
+    background-color: #f5810c;
+}
+.skill-progress-bar .progress-bar:nth-child(1) .bar{
+    width: 90%;
+} 
+.skill-progress-bar .progress-bar:nth-child(2) .bar{
+    width: 85%;
+} 
+.skill-progress-bar .progress-bar:nth-child(3) .bar{
+    width: 75%;
+} 
+.skill-progress-bar .progress-bar:nth-child(4) .bar{
+    width: 70%;
+} 
+.skill-progress-bar .progress-bar:nth-child(5) .bar{
+    width: 85%;
+} 
+
+.skill-right-section img{
+    width: 400px;
+    height: 400px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.skills-left-section{
+    flex: 0 0 30rem;
+}
+
+.skill-right-section-2 .line {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.left-side {
+    width: 5px;
+    height: 350px;
+    background: #f5810c;
+    margin-right: 8px;
+    position: relative;
+}
+
+.left-side span:nth-child(1) {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffac57;
+    position: absolute;
+    left: -4px;
+    top: 50px;
+}
+
+.left-side span:nth-child(2) {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffac57;
+    position: absolute;
+    left: -4px;
+    top: 186px;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right-side p {
+    padding-bottom: 30px;
+}
+
+.right-side h3 {
+    color: #ff5722d4;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.right-side .right-content   span {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: bold;
+  
+}
+
+
+
+
